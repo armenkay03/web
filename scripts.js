@@ -1,3 +1,18 @@
+
+function downloadZip() {
+    const link = document.createElement('a'); // Create a new anchor element
+    link.href = 'https://github.com/armenkay03/web/archive/refs/heads/main.zip'; // Set the URL to download
+    link.download = 'web.zip'; // Set a default filename
+    document.body.appendChild(link); // Append the link to the body
+    link.click(); // Programmatically click the link to trigger the download
+    document.body.removeChild(link); // Remove the link from the document
+}
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Example JavaScript for interactive elements
 
